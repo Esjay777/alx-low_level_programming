@@ -1,26 +1,20 @@
-/*
- * File: 0-memset.c
- * Auth: not
- */
-
-#include "main.h" 
-
+#include "main.h"
 /**
- * _memset - fill a block of memory with a specific value
- * @s: starting address of memory to be filled
- * @b: the desired value
- * @n: number of bytes to be changed
- *
- * Return: changed array with new value for n bytes
- */
-void *_memset(char *s, char b, unsigned int n)
+* _memset - fill a block of memory with a specific value
+* @s: starting address of memory to be filled
+* @b: the desired value
+* @n: number of bytes to be changed
+*
+* Return: changed array with new value for n bytes
+*/
+char *_memset(char *s, char b, unsigned int n)
 {
-	inti = 0;
+	int i = 0;
 
 	for (; n > 0; i++)
 	{
 		s[i] = b;
-	       	n--;
+		n--;
 	}
-	return (s); 
+	return (s);
 }
