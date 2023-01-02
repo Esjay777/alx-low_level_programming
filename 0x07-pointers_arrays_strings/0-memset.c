@@ -1,39 +1,14 @@
+#include <stdio.h>
 #include "main.h"
+char *_memset(char *s, char b, unsigned int n);
+int main(void) {
 
-/**
-*
-*  * _memset - fill a block of memory with a specific value
-*
-*   * @s: starting address of memory to be filled
-*
-*    * @b: the desired value
-*
-*     * @n: number of bytes to be changed
-*
-*      *
-*
-*       * Return: changed array with new value for n bytes
-*
-*        */
+	    char str[10];
 
-char *_memset(char *s, char b, unsigned int n)
+	        _memset(str, 'a', 10);
 
-{
+		    printf("%s\n", str);  // Outputs "aaaaaaaaaa"
 
-	    inti = 0;
-
-
-
-	        for (; n > 0; i++)
-
-			    {
-
-				            s[i] = b;
-
-					            n--;
-
-						        }
-
-		    return (s);
+		        return 0;
 
 }
